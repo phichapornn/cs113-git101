@@ -1,0 +1,43 @@
+Control Flow
+#include<stdio.h>
+int main(){
+}
+- Statements and Blocks
+    - expression กลายเป็น Statement //เมื่อถูกปิดด้วย ;
+    - เครื่องหมายปีกกา{} //ใช้รวมเป็นblock
+- if-Else
+    - if(expression){
+          Statement1 }
+      else{
+          Statement2 }
+- Else-if //ถ้า expression ตัวไหนเป็นจริง Statement ที่เกี่ยวจะทำงาน
+    - if (expression1){
+          Statement1 }
+      else if (expression2){
+          Statement2 }
+      else if (expression3){
+          Statement3 }
+      else {
+          Statement4 }
+- Switch //คำสั่ง Statements ใต้ defauit จะทำงานเมื่อ expression ไม่เข้ากับ case ใดเลย
+    - Switch (expression){
+          case:
+             Statements
+          defauit:
+             Statements
+    }
+-Loop-while และ For
+    - while (expression) //จะวนทำงานจนกว่าจะเท็จ
+          Statement
+    - for (expr1; expr2; expr3) //ตัวแปร;เงื่อนไข;น้ำหนักการ่ทำ
+          Statement
+- Loops - Do-while //ทำdoก่อนรอบนึงละเข้าwhile
+    - do {
+          Statement }
+      while (expression);
+          Statement 
+- Break and Continue
+    - break จะทำให้โปรแกรมหลุดออกมาจากลูป 
+    - while ทำให้เกิดการวนซ้ำขึ้นมาใหม่
+
+
