@@ -1,0 +1,40 @@
+Pointers และ Dynamic Memory Allocation
+#include<stdio.h>
+int main(){
+}
+-Pointers and Addresses
+     - Pointer เป็นตัวแปรที่ใช้เก็บค่าตำแหน่งหรือ Address ในหน่วยความจำ
+     - ค่าของตำแหน่งหรือ Address ในหน่วยความจำก็คือค่าจำนวนเต็มบวกที่เริ่มจาก 0
+ตัวอย่าง
+int c;
+int *p;
+p = &c;
+- Pointer and operators
+     - & เป็น operator ที่ใช้หาค่าตำแหน่งในหน่วยความจำของ operand
+     p = &c; //เป็นการกำหนดค่าให้กับตัวแปร p ให้มีค่าเท่ากับ Address ของตัวแปร c
+     - * ถูกใช้ในการเข้าถึงข้อมูลที่ถูกอ้างอิงโดยค่าตำแหน่งในหน่วยความจำที่มีค่าเป็น operand
+ตัวอย่าง
+#include<stdio.h>
+int main(){
+    int c = 5;
+    int *p;
+    p = &c;
+    printf(" c = %d\n", c);
+    printf("*p = %d\n", *p);
+}
+- ฟังก์ชันscanf()
+    - คล้ายกับฟังก์ชัน printf() แต่ทำงานลักษณะตรงกันข้ามกัน
+    ตัวอย่าง int input;
+           scanf("%d", &input);
+- segmentation fault
+    -หากเราพยายามเข้าถึงหน่วยความจำที่เราไม่ได้จองไว้หรือหน่วยความจำที่นอกเหนือจากตัวแปรที่เราประกาศไว้ มีโอกาสที่จะถูกระบบปฏิบัติการ
+    จะหยุดทำงานของโปรแกรมของเรา โดยแสดงข้อความ segmentation fault
+ตัวอย่าง
+#include<stdio.h>
+int main(){
+    int data[] = {1, 2, 3, 4, 5};
+    int i;
+    for (i=0;i < 5000; i++)
+         printf("Data element #%d is %d\n", i, data[i]);
+}
+
