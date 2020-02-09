@@ -1,0 +1,29 @@
+Functions and Program structure-1
+#include<stdio.h>
+int main(){}
+- คอมไพเลอร์ภาษาซีเป็นคอมไพเลอร์แบบ one-pass
+- ฟังก์ชัน printf, scanf, getchar เป็นตัวอย่างของฟังก์ชันที่อยู่ใน standard Library Functions
+- ฟังก์ชัน sqrt, exp, log เป็นตัวอย่างของฟังก์ชันที่อยู่ใน math Library Functions
+- หากต้องการใช้ฟังก์ชันใน math Library Functions เราควรต้อง #include<math.h> ด้วย
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float c, d, f;
+    c = 10.0;
+    d = 2.0;
+    f = 1.0;
+    printf("sqrtของc+d*f = %.2f\n", sqrt(c+d*f));
+}
+- Return Values
+     -ใช้ void เพื่อบอกว่าฟังก์ชันนี้ไม่มีการส่งค่าใดๆกลับไปยังผู้เรียก
+     -หากเป็นฟังก์ชันที่มีการส่งค่ากลับ ใช้คีย์เวิร์ด Return
+     - ตัวอย่าง return 5;
+              return (x>5);
+              return (myFunction());
+- Recursion (การเรียกซ้ำ)
+     - ฟังก์ชันสามารถเรียกใช้ตนเองได้
+     - การเรียกตัวเองอยู่ในรูป direct และ indirect
+- local variables
+     - ตัวแปรที่ถูกประกาศไว้อยู่ภายใน block 
+     - สามารถถูกใช้งานได้เพียงภายในฟัง์ชันที่ถูกประกาศไว้
