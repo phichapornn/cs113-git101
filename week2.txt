@@ -1,0 +1,47 @@
+Types,operators,and Expressions
+#include<stdio.h>
+int main()
+{
+    การประกาศตัวแปร
+    int x;    
+    float y;
+    x=10;   //เป็นจำนวนเต็ม
+    y=2.55; //เป็นจำนวนจริง
+}
+- ประเภทข้อมูลและขนาด(data types and sizes)
+- จำนวนเต็ม
+    -char 1 ไบท์
+    -int 4 ไบท์
+- จำนวนจริง
+    -float 4 ไบท์
+    -double 8 ไบท์
+- short int //ช่วยลดพื้นที่จัดเก็บประเภทตัวแปรจำนวนเต็ม
+- long int  //ช่วยเพิ่มพื้นที่จัดเก็บข้อมูล
+- unsigned  //เก็บเฉพาะค่าบวก
+- void  //ใช้ในการนิยามฟังก์ชันที่ไม่มีการส่งค่ากลับไปยังผู้เรียก
+- ค่าคงที่(constants)
+    - 0 บ่งบอกถึงเลขฐาน 8
+    - 0x บ่งบอกถึงเลขฐาน 16
+    - 0b บ่งบอกถึงเลขฐาน 2
+- print format
+    - ใช้ %o ในการพิมพ์เลขฐาน 8
+    - ใช้ %x ในการพิมพ์เลขฐาน 16 //พิมพ์ใหญ่พิมพ์เล็กมีผล
+- character constants (' ')
+- \n ขึ้นบรรทัดใหม่
+- string constants (" ")
+- printf()
+    - %d //integer
+    - %f //float
+    - %c //charecter
+- getchar() //ส่งค่ากลับไปยังผู้เรียกฟังก์ชัน
+- Arithmetic operators
+    - +, -, *, /, %  //ทำจากซ้ายไปขวา
+    - %  //ไม่สามารใช้กับ float และ double
+- Relational operators and logical operators
+    - >, >=, <, <=, ==, !=
+    - && and
+    - || or
+
+
+
+
