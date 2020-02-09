@@ -1,0 +1,33 @@
+Linked Lists
+#include<stdio.h>
+int main(){
+}
+- Linked List 
+     - เป็นโครงสร้างข้อมูลที่ถูกออกแบบมาใช้เก็บข้อมูล โดยข้อมูลแต่ละตัวจะเชื่อมโยงต่อกันเป็นสาย
+- ตัวอย่างการกำหนด structure
+struct student{
+    char id[12];
+    char name[40];
+    int age;
+};
+- การประกาศตัวแปรประเภท structure ดังนี้
+     struct student std;
+- ตัวแปร pointer ไปยัง structure
+     - การเข้าถึงสมาชิกแต่ละฟิลด์ผ่านตัวแปร pointer ดังนี้
+struct student std, *p_std;
+p_std = &std;
+printf("%s\n", (*p_std).name);
+(*p_std).age = 21;
+- การใช้ typedef
+     typedef unsigned long int ulint;
+ตัวอย่าง
+typedef struct student{
+    char id[12];
+    char name[40];
+    int age;
+}Student;
+- Doubly Linked List
+     - ลักษณะของ Linked List ที่เห็นผ่านมาเรียกว่า singly Linked List โดยพิจารณาได้จากการ
+       ที่แต่ละโหนดที่อยู่ติดกันเชื่อมต่อถึงกันผ่านลิงก์เพียงลิงก์เดียว
+     - นอกจาก singly Linked List เรายังสามารถสร้างโครงสร้างข้อมูลที่เรียกว่า Doubly Linked List
+       โดยที่แต่ละโหนดที่อยู่ติดกันเชื่อมต่อกันด้วยลิงก์ 2 ลิงก์
