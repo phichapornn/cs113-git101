@@ -1,0 +1,32 @@
+Functions and Program structure-2
+#include<stdio.h>
+int main(){
+}
+- local variables
+     - ตัวแปรที่ถูกประกาศไว้อยู่ภายใน block 
+     - สามารถถูกใช้งานได้เพียงภายในฟัง์ชันที่ถูกประกาศไว้
+- Global variables
+     - ตัวแปรที่ถูกประกาศไว้อยู่ภายนอกฟังก์ชัน
+- วิธีการคอมไพล์
+     - gcc -c main.c //คำสั่งนี้จะสร้าง main.o
+     - gcc -c func.c //คำสั่งนี้จะสร้าง func.o
+ตัวอย่าง
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+    int i;
+    srand(10);
+    for(i=0;i < 10;i++)
+       printf("%d\n", rand()%6+1);
+}
+2
+5
+3
+6
+1
+6
+6
+2
+6
+6
+
